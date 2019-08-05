@@ -9,7 +9,7 @@ function nowServing(katzDeliLine){
   }
   else{
   var newName = katzDeliLine[0]
-  katzDeliLine.splice(0,1)
+  katzDeliLine.shift()
   return `Currently serving ${newName}.`
   }
 }
